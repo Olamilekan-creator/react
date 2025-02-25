@@ -6,7 +6,6 @@ const Books = ({ books: initialBooks }) => {
 
   function filterBooks(filter) {
     console.log(filter);
-  }
   if (filter === "Low_TO_HIGH") {
     setBooks(
       books
@@ -30,6 +29,7 @@ const Books = ({ books: initialBooks }) => {
 if (filter === "RATING") {
   setBooks(books.slice().sort((a, b) => b.rating - a.rating));
 }
+  }
   return (
     <div id="books__body">
       <main id="books__main">
