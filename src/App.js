@@ -49,7 +49,7 @@ useEffect(() => {
  <Nav numberOfItems={numberOfItems()}/>
  <Route path="/" exact component={Home} />
 <Route path="/books" render={() => <Books exact books={books} />} />
-<Route path="/books/:id" render={() => <BookInfo books={books} addToCart={addToCart} />} />
+<Route path="/books/:id" render={() => <BookInfo books={books} addToCart={addToCart} cart={cart}/>} />
 <Route path="/cart" render={() => <Cart books={books} cart={cart} changeQuantity={changeQuantity} removeItem={removeItem}/>} />
  <Footer />
     </div>
